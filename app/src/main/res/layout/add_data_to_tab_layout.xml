@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cloum_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="key"
+            android:textColor="@color/maintxt"
+            android:textSize="14sp" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/cloum_name_value"
+            android:layout_below="@id/cloum_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:met_baseColor="@color/maintxt"
+            app:met_errorColor="@color/edit_line_error"
+            app:met_primaryColor="@color/edt_line_select" />
+
+    </RelativeLayout>
+
+</LinearLayout>

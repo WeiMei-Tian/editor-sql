@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/roottabslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/app_bar_bg_dark"
+            android:elevation="8dp">
+
+        </android.support.v7.widget.Toolbar>
+
+        <com.gmobile.sqliteeditor.widget.FeSwipeRefreshLayout
+            android:id="@+id/recycler_view_container"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/sql_tabs_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.gmobile.sqliteeditor.widget.FeSwipeRefreshLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.gmobile.sqliteeditor.library.fab.FloatingActionButton
+                android:id="@+id/mFab"
+                style="@style/MenuButtonsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                fab:menu_icon="@drawable/ic_add_fab"
+                fab:fab_hideAnimation="@anim/bottom_out"
+                fab:fab_shadowColor="#56000000"
+                fab:fab_showAnimation="@anim/bottom_in"
+                fab:fab_size="normal" />
+
+            <com.gmobile.sqliteeditor.library.fab.FloatingActionMenu
+                android:id="@+id/mFam"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="16dp"
+                android:paddingRight="16dp"
+                fab:fab_elevationCompat="6dp"
+                fab:fab_size="normal"
+                fab:menu_icon="@drawable/ic_add_fab"
+                fab:menu_colorNormal="@color/fab_bg"
+                fab:menu_colorPressed="@color/fab_bg"
+                fab:menu_colorRipple="@color/fab_bg"
+                fab:menu_labels_ellipsize="end"
+                fab:menu_labels_hideAnimation="@anim/fab_scale_down"
+                fab:menu_labels_showAnimation="@anim/fab_scale_up"
+                fab:menu_labels_singleLine="true"
+                fab:menu_labels_style="@style/MenuLabelsStyle"
+                fab:layout_behavior="xcxin.filexpert.sqloperation.widget.ScrollAwareFABBehavior"
+                fab:menu_shadowColor="#56000000">
+
+                <com.gmobile.sqliteeditor.library.fab.FloatingActionButton
+                    android:id="@+id/sql_btn_create_tab"
+                    style="@style/MenuButtonsStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_showAnimation="@anim/fab_scale_up"
+                    fab:fab_hideAnimation="@anim/fab_scale_down"
+                    android:src="@drawable/ic_folder_fab"
+                    fab:fab_label="@string/sql_create_new_tab"
+                    fab:fab_shadowColor="#56000000"
+                    fab:fab_size="mini" />
+
+                <com.gmobile.sqliteeditor.library.fab.FloatingActionButton
+                    android:id="@+id/sql_btn_import_tab"
+                    style="@style/MenuButtonsStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_showAnimation="@anim/fab_scale_up"
+                    fab:fab_hideAnimation="@anim/fab_scale_down"
+                    android:src="@drawable/ic_file_fab"
+                    fab:fab_label="@string/sql_import_tab"
+                    fab:fab_shadowColor="#56000000"
+                    fab:fab_size="mini" />
+
+            </com.gmobile.sqliteeditor.library.fab.FloatingActionMenu>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/admob_layout"
+        layout="@layout/google_admob"/>
+
+</RelativeLayout>

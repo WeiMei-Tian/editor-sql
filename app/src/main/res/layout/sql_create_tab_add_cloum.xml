@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/twenty_four_dp"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="@dimen/dialog_content_padding_left_right"
+    android:paddingRight="@dimen/dialog_content_padding_left_right"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/input_file_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/sql_create_tab_cloum_name"
+                android:textColor="@color/maintxt"
+                android:textSize="14sp" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/cloum_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                app:met_errorColor="@color/edit_line_error"
+                app:met_primaryColor="@color/edt_line_select" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sql_data_type"
+            android:textColor="@color/maintxt"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            >
+
+
+            <Spinner
+                android:id="@+id/spinner_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/spinner_type" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_spinner_down" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sql_create_tab_cloum_length"
+                android:textColor="@color/maintxt"
+                android:textSize="14sp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_string_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:inputType="number"
+                app:met_errorColor="@color/edit_line_error"
+                app:met_primaryColor="@color/edt_line_select" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/condition_type_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty_dp">
+
+            <TextView
+                android:id="@+id/sql_create_tab_cloum_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:text="@string/sql_create_tab_cloum_condition"
+                android:textColor="@color/maintxt"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/condition_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_spinner_down" />
+
+            <TextView
+                android:id="@+id/condition_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/condition_icon"
+                android:textColor="@color/maintxt"
+                android:text="DEFAULT"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/input_default_value_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/input_default_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/sql_create_tab_cloumn_default"
+                android:textColor="@color/maintxt"
+                android:textSize="14sp" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_default_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                app:met_errorColor="@color/edit_line_error"
+                app:met_primaryColor="@color/edt_line_select" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty_dp">
+
+            <TextView
+                android:id="@+id/selection_path_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/eight_dp"
+                android:text="@string/sql_create_tab_cloum_primarykry"
+                android:textColor="@color/maintxt"
+                android:textSize="16sp" />
+
+
+            <CheckBox
+                android:id="@+id/primary_key_checkbox"
+                android:layout_width="wrap_content"
+                style="@style/CustomCheckboxTheme"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/selection_path_tv"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/primaty_autoincrement_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/primaty_autoincrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/eight_dp"
+                android:text="@string/sql_create_tab_cloum_primarykry_autoincrement"
+                android:textColor="@color/maintxt"
+                android:textSize="16sp" />
+
+
+            <CheckBox
+                android:id="@+id/primaty_autoincrement_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomCheckboxTheme"
+                android:layout_alignBottom="@id/primaty_autoincrement"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_select_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty_dp">
+
+            <TextView
+                android:id="@+id/fk_table_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/eight_dp"
+                android:layout_marginRight="@dimen/eight_dp"
+                android:text="@string/sql_create_tab_cloum_table"
+                android:textColor="@color/maintxt"
+                android:textSize="16sp" />
+
+            <!--android:layout_toLeftOf="@+id/delete_after"-->
+            <!--android:layout_toStartOf="@+id/delete_after"-->
+
+            <ImageView
+                android:id="@+id/tab_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_spinner_down" />
+
+            <TextView
+                android:id="@+id/fk_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/tab_icon"
+                android:layout_toStartOf="@id/tab_icon"
+                android:layout_marginLeft="95dp"
+                android:layout_marginStart="95dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/maintxt"
+                android:maxLines="2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_select_cloumn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fk_field_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/sql_create_tab_cloum_field"
+                android:textColor="@color/maintxt"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/filed_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_spinner_down" />
+
+            <TextView
+                android:id="@+id/fk_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="95dp"
+                android:maxLines="2"
+                android:textColor="@color/maintxt"
+                android:layout_toLeftOf="@id/filed_icon"
+                android:layout_toStartOf="@id/filed_icon"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

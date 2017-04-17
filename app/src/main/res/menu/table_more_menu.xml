@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/edit"
+        android:icon="@drawable/ic_more_navbar"
+        android:id="@+id/pop_edit"/>
+    <item
+        android:title="@string/delete"
+        android:icon="@drawable/ic_more_navbar"
+        android:id="@+id/pop_delete"/>
+    <item
+        android:title="@string/sql_db_export"
+        android:icon="@drawable/ic_more_navbar"
+        android:id="@+id/pop_export"/>
+    <item
+        android:title="@string/rename"
+        android:icon="@drawable/ic_more_navbar"
+        android:id="@+id/pop_rename"/>
+</menu>

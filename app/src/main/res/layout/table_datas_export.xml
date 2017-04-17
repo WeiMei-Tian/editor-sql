@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dialog_content_padding_left_right"
+    android:paddingRight="@dimen/dialog_content_padding_left_right">
+
+
+    <LinearLayout
+        android:id="@+id/name_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/input_file_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sql_export_table_name"
+            android:textColor="@color/maintxt"
+            android:textSize="14sp" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/sql_export_table_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:met_baseColor="@color/maintxt"
+            app:met_errorColor="@color/edit_line_error"
+            app:met_primaryColor="@color/edt_line_select" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/format_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_content"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/export_format"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/sql_table_export_format"
+            android:textColor="@color/maintxt"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_format"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <Spinner
+                android:id="@+id/spinner_format"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/spinner_format"
+                android:background="@color/item_driver_bg_light" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_spinner_down" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/head_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/format_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/export_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:text="@string/sql_table_export_head"
+            android:textColor="@color/maintxt"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/export_head_checkBox"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/export_column_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_content"
+        android:layout_marginTop="@dimen/twenty_dp">
+
+        <TextView
+            android:id="@+id/export_column_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:text="@string/sql_import_column"
+            android:textColor="@color/maintxt"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:id="@+id/condition_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_spinner_down" />
+
+        <TextView
+            android:id="@+id/column_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/condition_icon"
+            android:text="@string/all_field"
+            android:textColor="@color/maintxt" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/name_path_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/export_column_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/selection_path_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/eight_dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/compression_selection_path"
+            android:textColor="@color/maintxt"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/display_path_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/path_icon"
+                android:layout_toStartOf="@+id/path_icon"
+                android:textColor="@color/btn_enable"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/dividingLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/display_path_tv"
+                android:background="@color/item_driver_bg_light" />
+
+            <ImageView
+                android:id="@+id/path_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/display_path_tv"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_spinner_down" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/eight_dp"
+    android:paddingLeft="@dimen/sixteen_dp"
+    android:paddingRight="@dimen/sixteen_dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/sql_create_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:hint="@string/sql_create_new_tab_name"
+            app:met_errorColor="@color/edit_line_error"
+            app:met_primaryColor="@color/edt_line_select"/>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mm_up_arrow_margin">-16dp</dimen>
+
+
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="labels_text_size">12sp</dimen>
+    <dimen name="fastscroll_popup_size">72dp</dimen>
+    <dimen name="fastscroll_popup_text_size">48dp</dimen>
+    <dimen name="fastscroll_thumb_min_width">0dp</dimen>
+    <dimen name="fastscroll_thumb_max_width">9dp</dimen>
+    <dimen name="fastscroll_thumb_height">72dp</dimen>
+    <dimen name="fastscroll_thumb_touch_inset">-24dp</dimen>
+</resources>

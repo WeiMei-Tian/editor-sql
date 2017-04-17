@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_more_im_sql"
+        android:icon="@drawable/ic_sql"
+        android:orderInCategory="100"
+        android:title="@string/sql_commond_sql"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_delete"
+        android:orderInCategory="100"
+        android:title="@string/delete_db"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_export"
+        android:orderInCategory="100"
+        android:title="@string/sql_db_export"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_rename"
+        android:orderInCategory="100"
+        android:title="@string/rename"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_create_desk"
+        android:orderInCategory="100"
+        android:title="@string/create_to_desktop"
+        app:showAsAction="never"
+        />
+
+</menu>

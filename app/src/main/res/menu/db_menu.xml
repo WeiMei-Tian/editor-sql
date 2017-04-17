@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/sql_operation_setting"
+        android:icon="@drawable/ic_more_navbar"
+        android:id="@+id/pop_file"/>
+    <item
+        android:title="@string/about"
+        android:icon="@drawable/ic_more_navbar"
+        android:id="@+id/pop_share"/>
+</menu>   

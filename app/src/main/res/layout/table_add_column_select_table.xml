@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dividingLine_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/eight_dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forty_eight_dp"
+        android:layout_below="@+id/dividingLine_layout"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/menu_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:layout_marginStart="@dimen/sixteen_dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:textColor="@color/maintxt"
+            android:maxLines="2"
+            android:gravity="center_vertical"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/menu_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/sixteen_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:src="@drawable/ic_check" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

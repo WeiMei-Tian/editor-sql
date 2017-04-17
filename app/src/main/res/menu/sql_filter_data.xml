@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_filter_sql"
+        android:icon="@drawable/ic_sql"
+        android:orderInCategory="100"
+        android:title="@string/filter_title"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_filter_export"
+        android:icon="@drawable/ic_export_white"
+        android:orderInCategory="100"
+        android:title="@string/sql_data_more_export"
+        app:showAsAction="always" />
+
+</menu>

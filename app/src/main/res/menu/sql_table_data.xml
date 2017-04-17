@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_sql"
+        android:icon="@drawable/ic_sql"
+        android:orderInCategory="100"
+        android:title="@string/sql_commond_sql"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_filter"
+        android:orderInCategory="100"
+        android:title="@string/filter_title"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_more_navbar"
+        android:orderInCategory="100"
+        android:title="@string/more"
+        app:showAsAction="always" />
+
+</menu>

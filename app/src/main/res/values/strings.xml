@@ -1,0 +1,190 @@
+<resources>
+    <string name="app_name">SqliteEditor</string>
+    <string name="banner_ad_unit_id">ca-app-pub-9104226499574771/2122923248</string>
+
+    <string name="sqliteeditor">数据库编辑器</string>
+
+    <string name="sql_operation_setting">设置</string>
+    <string name="sql_operation_feedback">反馈</string>
+    <string name="about">关于</string>
+    <string name="sql_pay_tip">数据库编辑器尚未购买，目前仅支持查看或导出数据库、数据表，购买后即可使用更多操作</string>
+    <string name="no_root_tip">您未授权ROOT权限，无法访问APP，请先前往进行授权！</string>
+    <string name="needroot">此功能仅对已经取得 root 权限的设备有效，但您的设备并未 root 。</string>
+    <string name="root_unsupport_nougat1">此功能暂无法支持Android7.0设备，我们会尽快修改更新。</string>
+    <string name="root_upsupport_nougat2">暂不支持在Android7.0设备上读取根目录文件，我们会尽快修改更新。</string>
+
+    <string name="cancel">取消</string>
+    <string name="okey">确定</string>
+
+
+
+    <string name="all_field">All Fields</string>
+    <string name="fe_sql_editor">FE SQLite Database Editor</string>
+    <string name="sql_info">Support to create Database and Table, and all operations like edit, delete, import and export ect.</string>
+    <string name="sql_not_pay">Please purchase before use.</string>
+    <string name="sql_open">Enable</string>
+
+    <string name="sql_operation">SQLite Database Editor</string>
+    <string name="sql_create_db_path">Select Save Path</string>
+    <string name="sql_create_new_tab">Create Table</string>
+    <string name="sql_create_new_tab_name">Table Name</string>
+    <string name="sql_import_tab">Import Table</string>
+    <string name="sql_create_table_empty_tip_top">This table is empty.</string>
+    <string name="sql_create_table_empty_tip_bottom">Press Floating Button to add field.</string>
+    <string name="sql_create_tab_add">Add</string>
+    <string name="sql_import_tab_path">Select a File to Import</string>
+    <string name="sql_import_csv_path">Select a CSV File to Import</string>
+    <string name="sql_create_new_db">Create Database</string>
+    <string name="sql_create_new_db_name">Database Name</string>
+    <string name="sql_create_input_db_name">Please input database name. </string>
+    <string name="sql_export_table_name">Please input a name of exported file.</string>
+    <string name="sql_create_tab_add_cloum">Add Field</string>
+    <string name="sql_create_tab_edit_cloum">Edit Field</string>
+    <string name="sql_create_tab_cloum_name">Field Name</string>
+    <string name="sql_data_type">Datatype</string>
+    <string name="sql_create_tab_cloum_length">Length</string>
+    <string name="sql_create_tab_cloum_condition">Constraints</string>
+    <string name="end">Complete</string>
+    <string name="sql_create_tab_add_goon">Insert Another</string>
+    <string name="sql_add_column_error">Adding failed, field name already exists in this table.</string>
+    <string name="sql_add_column_data">Insert</string>
+    <string name="sql_update_column_data">Edit</string>
+
+
+    <string name="create_column_error1">Multiple PRIMARY KEY is not allowed.</string>
+    <string name="create_column_error2">Field name already exists.</string>
+    <string name="create_column_error3">Create failed!</string>
+    <string name="create_column_error6">Field name cannot be empty.</string>
+    <string name="create_column_success">Create completed!</string>
+    <string name="sure_delete_row_data">Are you sure to delete this row?</string>
+    <string name="sure_clear_table_data">Are you sure to truncate this table?</string>
+    <string name="sure_delete_table">Are you sure to drop this table?</string>
+    <string name="sure_delete_column_data">Are you sure to drop this field?</string>
+    <string name="filter_fields">Field(s) to filter on: </string>
+    <string name="filter_value">Filter value: </string>
+    <string name="filter_title">Filter</string>
+    <string name="sql_data_more_sort">Sort</string>
+    <string name="sql_data_more_clear_data">Truncate Table</string>
+    <string name="sql_data_more_export">Export File</string>
+    <string name="sql_data_more_import">Import CSV</string>
+    <string name="sql_data_more_filter">Filter </string>
+    <string name="sql_data_more_information">Table Info</string>
+    <string name="sql_create_table_null_exit">You must enter at least one field to save this table, are you sure to leave?</string>
+    <string name="sql_create_table_null_save_add">Add</string>
+    <string name="sql_create_table_save_succeed">Saved!</string>
+    <string name="delete_column_error1">Operation failed, this table cannot be saved after deletion.</string>
+    <string name="delete_column_error2">Operation failed!</string>
+    <string name="delete_column_error3">Operation failed, this field is the FK FIELD of other table.</string>
+    <string name="sql_commond_hint">Please input SQL statement</string>
+    <string name="sql_commond_response">Results</string>
+    <string name="sql_db_import">Import Database</string>
+    <string name="sql_db_export">Export Database</string>
+    <string name="sql_table_export_format">Export Structure</string>
+    <string name="sql_table_export_head">Export Header</string>
+    <string name="sql_table_import_head">Import Header</string>
+    <string name="sql_table_sql_error">An error occurred during executing SQL query.</string>
+    <string name="sql_table_export_finish">Complete</string>
+    <string name="sql_choice_db_file">Select Database File</string>
+    <string name="sql_db_create_cannot_null">Database filename cannot be empty.</string>
+    <string name="sql_column_auto">Auto Increment</string>
+    <string name="empty_data_table">This table has no data.</string>
+    <string name="no_data_change">No data has been modified.</string>
+    <string name="open_db_fail">Cannot open non-database file.</string>
+    <string name="column_count_not_same">The number of fields does not match between the imported file and this table, import data could be uncompleted. Are you sure to continue?</string>
+    <string name="exporting">Exporting...</string>
+    <string name="importing">Importing...</string>
+    <string name="sql_filter_no_data">Cannot find matched data.</string>
+    <string name="sql_choice_sql_file">Select Database File</string>
+    <string name="sql_create_column_condition_size">&amp;</string>
+    <string name="sql_commond_run">Run</string>
+    <string name="sql_filter_result">Filter Result</string>
+
+
+
+    <string name="cloum_text">TEXT</string>
+    <string name="cloum_boolean">BOOLEAN</string>
+    <string name="cloum_varchar">VARCHAR</string>
+    <string name="cloum_char">CHAR</string>
+    <string name="cloum_date">DATE</string>
+    <string name="cloum_datetime">DATETIME</string>
+    <string name="cloum_int">INT</string>
+    <string name="cloum_integer">INTEGER</string>
+    <string name="cloum_numeric">NUMERIC</string>
+    <string name="cloum_real">REAL</string>
+    <string name="cloum_blob">BLOB</string>
+
+    <string name="condition_notnull">NOT NULL</string>
+    <string name="condition_primary_kry">PRIMARY KEY</string>
+    <string name="condition_unique">UNIQUE</string>
+    <string name="condition_default">DEFAULT</string>
+    <string name="condition_foregin_key">FOREIGN KEY</string>
+    <string name="condition_auton_increament">AUTO INCREMENT</string>
+
+    <string name="add_colum_name">COLUMN NAME</string>
+    <string name="add_colum_type">TYPE</string>
+    <string name="add_colum_check">CHECK</string>
+
+    <string name="sql_commond_sql">SQL</string>
+    <string name="sql_table_export_format_html">HTML</string>
+    <string name="sql_table_export_format_csv">CSV</string>
+    <string name="sql_table_export_format_sql">SQL</string>
+
+    <string name="create_column_error4">Not Set FK TABLE</string>
+    <string name="create_column_error5">Not Set FK FIELD</string>
+    <string name="sql_create_tab_cloumn_default">DEFAULT VALUE</string>
+    <string name="sql_create_tab_cloum_primarykry">PRIMARY KEY</string>
+    <string name="sql_create_tab_cloum_primarykry_autoincrement">AUTO INCREMENT</string>
+    <string name="sql_create_tab_cloum_table">FK TABLE</string>
+    <string name="sql_create_tab_cloum_field">FK FIELD</string>
+
+
+
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="more">More</string>
+    <string name="open_fail">Failed to open</string>
+    <string name="operation_failed">Operation Failed</string>
+    <string name="compression_selection_path">Choose a path</string>
+    <string name="same_name">File name exists</string>
+    <string name="operation_success">Successful Operation</string>
+    <string name="rename">rename</string>
+    <string name="edit_smb_ok">Edited!</string>
+    <string name="account_permission">Contacts Permission</string>
+    <string name="account_permission_desc">You\'ve denied contacts permission to FE; therefore it may lead to login failure of Google account in FE.\n\nThis permission is for login via Google account; confirm to grant it to FE? </string>
+    <string name="set_account_permisson">FE cannot get your contacts permission; therefore you cannot log in via Google account. Please modify permission in Settings.\n</string>
+
+    <string name="storage_permission">Storage Permission</string>
+    <string name="storage_desc">You\'ve denied storage permission to FE; therefore it will not function properly. \n\nThe permission is for accessing storage, confirm to grand permission to FE?</string>
+    <string name="set_storage">FE cannot access your storage; therefore it will not function properly. Please go to Settings to modify permission. </string>
+    <string name="permission_desc_title">Permissions Specification</string>
+    <string name="permission_desc">File Expert needs you to grant the following permissions to function properly:\n\n<b>Phone</b>&#160;&#160;- FE needs to read your device\'s IMEI and generate unique id from it to verify whether your paid features and licenses are available. FE will never make any phone calls or read your phone numbers.\n\n<b>Storage</b>&#160;&#160;- FE is a file manager; therefore you have to grant the permission to modify your device\'s storage.\n\nIf you deny the permissions above, FE will not function properly.\n</string>
+    <string name="get_it">I Know</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="setting">Settings</string>
+    <string name="create_to_desktop">Shortcut</string>
+    <string name="create_to_desktop_success">Shortcut Created</string>
+    <string name="create_to_desktop_failed">Creating shortcut failed</string>
+
+    <string name="delete_db">删除数据库</string>
+    <string name="empty_name_tip">Filename can\'t be empty</string>
+    <string name="file_name_unqualified">Only &#8220;.&#8220; cannot be a filename</string>
+    <string name="file_name_illegal">Filename should exclude characters like ? " / \ &lt; &gt; * | :</string>
+    <string name="table_datas_as">&amp; ASC</string>
+    <string name="table_datas_desc">&amp; DESC</string>
+    <string name="exit_save_msg">Confirm to save the changes before exit?</string>
+    <string name="loading">Loading</string>
+    <string name="choice_path_create_db">选择创建路径</string>
+
+
+    <string name="sql_export_column">Fields to import into</string>
+    <string name="sql_import_column">Fields to export</string>
+    <string name="sql_select_column_error">至少选择一个字段</string>
+
+    <string name="editing">编辑中</string>
+    <string name="operation_finish">Operation Succeeded</string>
+    <string name="error_happen">出错，暂时无法操作</string>
+    <string name="open_db">打开数据库</string>
+
+    
+</resources>

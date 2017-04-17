@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/app_bar_bg_dark"
+            android:elevation="8dp">
+
+        </android.support.v7.widget.Toolbar>
+
+        <com.gmobile.sqliteeditor.widget.MyHorizontalScrollView
+            android:id="@+id/content"
+            android:layout_below="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="outsideOverlay">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableLayout
+                    android:id="@+id/sql_tabview_header_tab"
+                    android:background="@color/blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.jaredrummler.fastscrollrecycle.FastScrollRecyclerView
+                    android:id="@+id/sql_tabview_recycleview"
+                    fab:isSqlScan="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    fab:fastScrollPopupBackgroundColor="?attr/colorAccent"
+                    fab:fastScrollPopupTextColor="@android:color/white"
+                    fab:fastScrollThumbActiveColor="@color/fastscroll"
+                    fab:fastScrollThumbInactiveColor="?attr/colorAccent"/>
+
+            </LinearLayout>
+
+        </com.gmobile.sqliteeditor.widget.MyHorizontalScrollView>
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:layout_marginBottom="26dp"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/ic_add_fab"
+            fab:backgroundTint="@color/fab_bg"
+            fab:layout_behavior="com.gmobile.sqliteeditor.widget.ScrollAwareFABBehavior"
+            fab:rippleColor="#33728dff"
+            />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/admob_layout"
+        layout="@layout/google_admob"/>
+
+</RelativeLayout>

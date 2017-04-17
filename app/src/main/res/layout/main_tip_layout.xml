@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/store_advance_bg">
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:background="@drawable/white_btn_bg"
+        android:gravity="center"
+        android:minWidth="@dimen/forty_dp"
+        android:padding="@dimen/eight_dp"
+        android:text="购买"
+        android:textColor="@color/store_advance_bg"
+        android:textSize="@dimen/ten_sp" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@+id/tv_update"
+        android:text="@string/sql_pay_tip"
+        android:textColor="@color/tab_selected_color"
+        android:alpha="0.9"
+        android:textSize="@dimen/sixteen_dp"/>
+
+
+
+</RelativeLayout>
+

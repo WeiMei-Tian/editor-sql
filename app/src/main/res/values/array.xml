@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="cloum_type">
+        <item>@string/cloum_text</item>
+        <item>@string/cloum_boolean</item>
+        <item>@string/cloum_varchar</item>
+        <item>@string/cloum_char</item>
+        <item>@string/cloum_date</item>
+        <item>@string/cloum_datetime</item>
+        <item>@string/cloum_int</item>
+        <item>@string/cloum_integer</item>
+        <item>@string/cloum_numeric</item>
+        <item>@string/cloum_real</item>
+        <item>@string/cloum_blob</item>
+    </string-array>
+
+    <string-array name="null_length_type">
+
+    </string-array>
+
+    <string-array name="condition_type">
+        <item>@string/condition_notnull</item>
+        <item>@string/condition_unique</item>
+        <item>@string/condition_default</item>
+        <item>@string/condition_foregin_key</item>
+    </string-array>
+
+    <string-array name="add_column_result">
+        <item>@string/add_colum_name</item>
+        <item>@string/add_colum_type</item>
+        <item>@string/sql_create_tab_cloumn_default</item>
+        <item>@string/condition_primary_kry</item>
+        <item>@string/condition_auton_increament</item>
+        <item>@string/condition_foregin_key</item>
+        <item>@string/add_colum_check</item>
+        <item>@string/condition_default</item>
+        <item>@string/sql_create_tab_cloum_table</item>
+        <item>@string/sql_create_tab_cloum_field</item>
+        <item>@string/condition_notnull</item>
+        <item>@string/condition_unique</item>
+    </string-array>
+
+    <string-array name="add_column_result2">
+        <item>@string/add_colum_name</item>
+        <item>@string/add_colum_type</item>
+        <item>@string/add_colum_check</item>
+        <item>@string/condition_notnull</item>
+        <item>@string/condition_unique</item>
+        <item>@string/condition_default</item>
+        <item>@string/condition_foregin_key</item>
+        <item>@string/sql_create_tab_cloumn_default</item>
+        <item>@string/condition_primary_kry</item>
+        <item>@string/condition_auton_increament</item>
+        <item>@string/sql_create_tab_cloum_table</item>
+        <item>@string/sql_create_tab_cloum_field</item>
+
+
+    </string-array>
+
+    <array name="sql_export_format">
+        <item>@string/sql_table_export_format_html</item>
+        <item>@string/sql_table_export_format_csv</item>
+        <item>@string/sql_table_export_format_sql</item>
+    </array>
+
+    <array name="sql_result_export_format">
+        <item>@string/sql_table_export_format_html</item>
+        <item>@string/sql_table_export_format_csv</item>
+    </array>
+
+</resources>
